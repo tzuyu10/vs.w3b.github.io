@@ -1,0 +1,427 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+body{
+   background-color: #eae7e6;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, #eae7e6 3%, rgb(139,184,227) 38%, rgb(137,147,222) 68%, rgb(130,83,215) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    
+    
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.wrapper .sidebar ul li{
+  padding-top: 20px; 
+  padding: 10px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #fff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #594f8d;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+
+
+.navbar{
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    padding: 8px 0;
+    padding right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo{
+    left: 20px;
+    width:130px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #4b4276;
+    position: absolute;
+    left: 0;
+    bottom:-10px;  
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;   
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.vb{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+
+.vsbe{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 120px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.vsbe h1{
+    font-family: cursive;
+    font-size: 45px;
+}
+
+.Menu{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 50px;
+    margin: auto;
+    line-height: 20px;
+    padding-right: 20px;
+}
+
+.Menu h1{
+    font-family: cursive;
+    font-size: 35px;
+    line-height: 70px;
+}
+
+.Menu p{
+    line-height: 30px;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+.mnjpg{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+
+.Toolbar{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 50px;
+    margin: auto;
+    line-height: 20px;
+    padding-right: 20px;
+}
+
+.Toolbar h1{
+    font-family: cursive;
+    font-size: 35px;
+    line-height: 70px;
+}
+
+.Toolbar p{
+    line-height: 30px;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+.tbjpg{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-bottom: 50px;
+    padding-right: 30px;   
+}
+
+.PropertiesWindow{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 50px;
+    line-height: 20px;
+    padding-right: 20px;   
+}
+
+.PropertiesWindow h1{
+    font-family: cursive;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.PropertiesWindow p{
+    line-height: 30px;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+.pw{
+    display: flex;  
+}
+
+.pwjpg{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 30px; 
+}
+
+.Toolbox{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 50px;
+    line-height: 20px;
+    padding-right: 20px;   
+}
+
+.Toolbox h1{
+    font-family: monospace;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.Toolbox p{
+    line-height: 30px;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+.tbx{
+    display: flex;
+}
+
+.tbxjpg{
+    position: relative;
+    max-width: 120%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+}
+
+.SolutionExplorer{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 50px;
+    line-height: 20px;
+    padding-right: 20px;   
+}
+
+.SolutionExplorer h1{
+    font-family: cursive;
+    font-size: 30px;
+    line-height: 70px;    
+}
+
+.SolutionExplorer p{
+    font-family:monospace;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.se{
+    display: flex
+}
+
+.sejpg{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-right: 30px;  
+}
+
+.FormDesigner{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 50px;
+    line-height: 20px;
+    padding-right: 20px;   
+}
+
+.FormDesigner h1{
+    font-family: cursive;
+    font-size: 30px;
+    line-height: 70px;    
+}
+
+.FormDesigner p{
+    line-height: 30px;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+
+
+.fdjpg{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+  
+}
+
+.StatusBar{
+    padding-left: 250px;
+    position: relative;
+    padding-top: 50px;
+    line-height: 20px;
+    padding-right: 20px;   
+}
+
+.StatusBar h1{
+    font-family: monospace;
+    font-size: 30px;
+    line-height: 70px;    
+}
+
+.StatusBar p{
+    line-height: 30px;
+    font-family:monospace;
+    font-size: 20px;
+}
+
+
+
+.sbjpg{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+  
+}
+
+hr{
+    border-top: 2px  #4b4276 solid;
+    
+}
+
